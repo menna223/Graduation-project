@@ -1,3 +1,24 @@
+# Real live App
+# Introduction
+ - The real live app is an application to help blind people from the obstacle in the street
+
+# Dataset
+Coco Dataset 2017 is used in this project.
+
+# TOOLS
+- Android app
+- Python
+- Yolov4 Model
+- Google Map
+  
+# Features of The project
+- Object Detection To detect obj in the street to make blind people avoid it.
+- Voice interaction to convert each text in the project into voice .
+- Distance Measure to find distance between the object and blind person.
+- Find live location of blind person to help him to find his location and convert the location into voice .
+- Classify dangerous objects and convert it to voice.
+
+
 # Convert Darknet YOLOv4 or YOLOv3 to TensorFlow Model
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
@@ -185,34 +206,6 @@ python main.py --output results_yolov4_tf
 |-------------|---------|---------|---------|
 | YoloV3      | 55.43   | 52.32   |         |
 | YoloV4      | 61.96   | 57.33   |         |
-
-
-# Traning your own model
-```bash
-# Prepare your dataset
-# If you want to train from scratch:
-In config.py set FISRT_STAGE_EPOCHS=0 
-# Run script:
-python train.py
-
-# Transfer learning: 
-python train.py --weights ./data/yolov4.weights
-```
-The training performance is not fully reproduced yet, so I recommended to use Alex's [Darknet](https://github.com/AlexeyAB/darknet) to train your own data, then convert the .weights to tensorflow or tflite.
-
-
-
-# TODO
-* [x] Convert YOLOv4 to TensorRT
-* [x] YOLOv4 tflite on android
-* [ ] YOLOv4 tflite on ios
-* [x] Training code
-* [x] Update scale xy
-* [ ] ciou
-* [ ] Mosaic data augmentation
-* [x] Mish activation
-* [x] yolov4 tflite version
-* [x] yolov4 in8 tflite version for mobile
 
 # References
 
